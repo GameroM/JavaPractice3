@@ -1,0 +1,41 @@
+// Modify code to get an animation
+
+package exercises2;
+
+public class Ifstatements8
+{
+	public static void main( String[] args ) throws Exception
+	{
+		int repeats = 5;					// number of times the whole thing repeats
+		int steps_per_second = 20;			// speed of the demo
+
+		for ( int i=0; i<repeats*11 ; i++ )
+		{
+			if ( i%11 == 0 )
+				System.out.print(" .oOo..... \r");
+			else if ( i%11 == 1 )
+				System.out.print(" ..oOo.... \r");
+			else if ( i%11 == 2 )
+				System.out.print(" ...oOo... \r");
+			else if ( i%11 == 3 )
+				System.out.print(" ....oOo.. \r");
+			else if ( i%11 == 4 )
+				System.out.print(" .....oOo. \r");
+			else if ( i%11 == 5 )
+				System.out.print(" ......oOo \r");
+			else if ( i%11 == 6 )
+				System.out.print(" .......oO \r");
+			else if ( i%11 == 7 )
+				System.out.print(" o.......o \r");
+			else if ( i%11 == 8 )
+				System.out.print(" Oo....... \r");
+			else if ( i%11 == 9 )
+				System.out.print(" oOo...... \r");
+			else if ( i%11 == 10 )
+				System.out.print(" .oOo..... \r");
+
+			Thread.sleep(1000/steps_per_second);
+		}
+		
+	}
+}
